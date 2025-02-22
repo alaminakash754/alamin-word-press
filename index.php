@@ -24,7 +24,7 @@
                     <ul id="nav">
                         <li><a href="">Home</a></li>
                         <li><a href="">About us</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="">Contact us</a></li>
                         <li><a href="">Features</a></li>
                         <li><a href="">Media</a></li>
                         <li><a href="">Service</a>
