@@ -1,0 +1,124 @@
+/*
+common css
+*/
+body {
+  font-family: "Kaisei Decol", serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+  line-height: 1.5em;
+}
+#header_area .row {
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+}
+#header_area .col-md-3 {
+  margin-left: 100px;
+  margin-top: 30px;
+}
+img {
+  max-width: 100%;
+}
+#header_area {
+  padding: 15px 0;
+}
+
+#header_area .col-md-9 ul {
+  font-family: "Oswald", sans-serif;
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+  text-align: right;
+}
+#header_area .col-md-9 ul li {
+  display: inline-block;
+  position: relative;
+}
+#header_area .col-md-9 ul li a {
+  color: #2d3436;
+  padding: 20px 10px;
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+#header_area .col-md-9 ul li a {
+  background: #ea1a70;
+  color: #fff;
+}
+
+#header_area .col-md-9 ul li a:hover {
+  background: #c0392b;
+}
+
+#header_area .col-md-9 ul li ul {
+  background: #262626 none repeat scroll 0 0;
+  position: absolute;
+  left: -99999px;
+  top: 54px;
+  width: 150px;
+  text-align: center;
+}
+#header_area .col-md-9 ul li:hover ul {
+  left: 0;
+}
+#header_area .col-md-9 ul li:hover ul {
+  left: 0;
+}
+#header_area .col-md-9 ul li ul li {
+  display: block;
+}
+#header_area .col-md-9 ul li ul li a {
+  color: #fff;
+  padding: 10px 12px;
+}
+
+#header_area .col-md-9 ul li:hover ul li a {
+  background: none;
+  color: #fff;
+}
+#header_area .col-md-9 ul li:hover a {
+  background: #ea1a70;
+  color: #fff;
+}
+
+#header_area .col-md-9 ul li ul li a:hover {
+  border-radius: 0;
+  background: #262626;
+  border-bottom: 1px solid #ddd;
+}
+
+/* sub dropdown menu*/
+#header_area .col-md-9 ul li ul ul {
+  left: -999999px;
+  top: 0;
+  position: absolute;
+}
+#header_area .col-md-9 ul li:hover ul li ul {
+  left: -999999px;
+}
+#header_area .col-md-9 ul li ul li:hover ul {
+  top: 55px;
+  left: 0px;
+  margin-left: 30px;
+}
+#header_area .col-md-9 ul li ul li:hover a {
+  background: #ea1a70;
+  columns: #fff;
+}
+#header_area .col-md-9 ul ul li:hover ul li a {
+  background: #262626;
+  columns: #fff;
+}
+#header_area .col-md-9 ul ul li ul li a:hover {
+  background: #ea1a70;
+  columns: #fff;
+}
