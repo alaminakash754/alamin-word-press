@@ -29,9 +29,9 @@
                         <li><a href="">Media</a></li>
                         <li><a href="">Service</a>
                     <ul>
-                        <li><a href="">Dropdown Menu</a></li>
-                        <li><a href="">Dropdown Menu</a></li>
-                        <li><a href="">Dropdown Menu</a>
+                        <li><a href="">Dropdown Menu1</a></li>
+                        <li><a href="">Dropdown Menu2</a></li>
+                        <li><a href="">Dropdown Menu3</a>
                     <ul>
                         <li><a href="">Service1</a></li>
                         <li><a href="">Service2</a></li>
