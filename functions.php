@@ -33,6 +33,7 @@ add_action( 'wp_enqueue_scripts', 'aw_add_google_fonts');
 
 // theme function
 function aw_customizer_register($wp_customize){
+    // Header area function
     $wp_customize->add_section('aw_header_area', array(
         'title' =>__('Header Area', 'alaminakash'),
         'description' => 'you can update logo from here.'
@@ -47,6 +48,9 @@ function aw_customizer_register($wp_customize){
         'description' => ' If you interested to change or update your logo you can do it',
         'section' => 'aw_header_area'
     )));
+
+    // Menu position option
+    $wp_customize->add_section('aw_menu_option', )
 }
 add_action( 'customize_register', 'aw_customizer_register');
 
