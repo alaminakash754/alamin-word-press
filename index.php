@@ -21,27 +21,7 @@
                      <a href=""><img src="<?php echo get_theme_mod( 'aw_logo')?>" alt=""></a>
                 </div>
                 <div class="col-md-9">
-                    <ul id="nav">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About us</a></li>
-                        <li><a href="">Contact us</a></li>
-                        <li><a href="">Feature</a></li>
-                        <li><a href="">Media</a></li>
-                        <li><a href="">Service</a>
-                    <ul>
-                        <li><a href="">Dropdown Menu1</a></li>
-                        <li><a href="">Dropdown Menu2</a></li>
-                        <li><a href="">Dropdown Menu3</a>
-                    <ul>
-                        <li><a href="">Service1</a></li>
-                        <li><a href="">Service2</a></li>
-                        <li><a href="">Service3</a></li>
-                    </ul>
-                    </li>
-                    </ul>
-                    </li>
-                        <li><a href="">Project</a></li>
-                    </ul>
+                    <?php wp_nav_menu( array('theme_location' => 'main_menu', 'menu_id' => 'nav') ); ?>
                 </div>
             </div>
         </div>
