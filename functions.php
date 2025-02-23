@@ -50,7 +50,25 @@ function aw_customizer_register($wp_customize){
     )));
 
     // Menu position option
-    $wp_customize->add_section('aw_menu_option', )
+    $wp_customize->add_section('aw_menu_option', array(
+        'title' => __('Menu Position Option', 'alaminakash'),
+       'description' => 'you can change menu position from here.'
+    ) );
+    $wp_customize->add_setting('aw_menu_position', array(
+        'default'=> 'right_menu'
+    ));
+    $wp_customize-> add_control('aw_menu_position', array(
+        'label'=> 'Menu Position',
+        'description' => 'Select Your Menu Position',
+        'setting' => 'aw_menu_position',
+        'section' => 'aw_menu_option',
+        'type' => 'radio',
+        'choices' => array(
+            'left_menu' => 'Left Menu',
+            'right_menu' => 'Right Menu',
+            'center_menu' => 'Center Menu',
+        ),
+    ));
 }
 add_action( 'customize_register', 'aw_customizer_register');
 
