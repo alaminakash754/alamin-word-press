@@ -69,6 +69,21 @@ function aw_customizer_register($wp_customize){
             'center_menu' => 'Center Menu',
         ),
     ));
+
+    // Footer option
+    $wp_customize->add_section('aw_footer_option', array(
+        'title' => __('Footer Option', 'alaminakash'),
+       'description' => 'you can change or update footer text from here.'
+    ) );
+    $wp_customize->add_setting('aw_footer_section', array(
+        'default'=> '&copy; Copyright 2025 | Alamin BD' ,
+    ));
+    $wp_customize-> add_control('aw_footer_section', array(
+        'label'=> 'Copyright Text',
+        'description' => 'You can change or update footer text from here',
+        'setting' => 'aw_footer_section',
+        'section' => 'aw_footer_option',
+    ));
 }
 add_action( 'customize_register', 'aw_customizer_register');
 
