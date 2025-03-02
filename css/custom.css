@@ -17,15 +17,7 @@ h6 {
 /*
 * Header Area style
 */
-#notice {
-  background: #c0392b;
-  padding: 10px 0;
-  color: #fff;
-  text-align: center;
-}
-#notice .p {
-  margin: 0;
-}
+
 #header_area .row {
   justify-content: space-around;
   display: flex;
