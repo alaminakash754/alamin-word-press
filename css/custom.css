@@ -18,7 +18,19 @@ h6 {
   font-family: "Oswald", sans-serif;
   line-height: 1.5em;
 }
-
+a.readmore {
+  background: #ef4a8f;
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+a.readmore:hover {
+  background: #262626;
+}
 /*
 * Header Area style
 */
@@ -131,7 +143,7 @@ img {
   columns: #fff;
 }
 #header_area .col-md-9 ul ul li ul li a:hover {
-  background: #ea1a70;
+  background: #ef4a8f;
   columns: #fff;
 }
 
@@ -167,6 +179,42 @@ Menu Position
 /*
 * Index Page style
 */
+#body_area {
+  padding: 45px 0;
+}
+#body_area .blog_are {
+  width: 100%;
+  margin-bottom: 15px;
+}
+#body_area .post_thumb {
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 15px;
+}
+#body_area .post_thumb img {
+  transition: 0.5s;
+  width: 100%;
+  display: block;
+}
+#body_area .post_thumb:hover img {
+  transform: scale(1.1);
+}
+#body_area .post_details {
+  width: 100%;
+}
+#body_area .post_details h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+#body_area .post_details h2 a {
+  color: #262626;
+  text-decoration: none;
+  transition: 0.5s;
+}
+#body_area .post_details h2 a:hover {
+  color: #c0392b;
+}
 
 /*
 Copyright Area Style
