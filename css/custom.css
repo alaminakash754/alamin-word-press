@@ -2,7 +2,12 @@
 common css
 */
 body {
-  font-family: "Kaisei Decol", serif;
+  font-family: "Oswald", sans-serif;
+  line-height: 1.5em;
+}
+p {
+  font-family: "Oswald", sans-serif;
+  line-height: 1.5em;
 }
 h1,
 h2,
@@ -17,17 +22,14 @@ h6 {
 /*
 * Header Area style
 */
-
 #header_area .row {
-  justify-content: space-around;
+  justify-content: space-between;
   display: flex;
   align-items: center;
 }
-#header_area .col-md-3 {
-  margin-top: 30px;
-}
+
 img {
-  max-width: 100%;
+  max-width: 80%;
 }
 #header_area {
   padding: 15px 0;
@@ -61,8 +63,7 @@ img {
 }
 
 #header_area .col-md-9 ul li a {
-  background: #ea1a70;
-  color: #fff;
+  color: #080808;
 }
 
 #header_area .col-md-9 ul li a:hover {
@@ -162,6 +163,10 @@ Menu Position
   flex-direction: column;
   justify-content: center;
 }
+
+/*
+* Index Page style
+*/
 
 /*
 Copyright Area Style
