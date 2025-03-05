@@ -27,7 +27,12 @@ get_header( );
                     _e('No Post found');
                 endif;
                 ?>
-
+            <div id="page_nav">
+                <?php if ('aw_pagenav') {aw_pagenav(); } else { ?>
+                    <?php next_post_link(); ?>
+                    <?php previous_post_link(); ?>
+                    <?php } ?>
+            </div>
             </div>
             <div class="col-md-3">
                 <h3> This is side bar area</h3>

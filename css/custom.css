@@ -25,7 +25,6 @@ a.readmore {
   text-decoration: none;
   display: inline-block;
   padding: 10px 25px;
-  border-radius: 10px;
   transition: 0.5s;
 }
 a.readmore:hover {
@@ -182,6 +181,12 @@ Menu Position
 #body_area {
   padding: 45px 0;
 }
+#body_area .blog_area {
+  width: 100%;
+  margin-bottom: 17px;
+  background: rgb(243, 243, 243);
+  padding: 15px;
+}
 #body_area .blog_are {
   width: 100%;
   margin-bottom: 15px;
@@ -216,6 +221,29 @@ Menu Position
   color: #c0392b;
 }
 
+/*
+*Pagination Style
+*/
+#page_nav {
+}
+#page_nav p.pages {
+  background: #ea1a70;
+  color: #fff;
+  padding: 5px 10px;
+}
+#page_nav .page-numbers {
+  background: #ea1a70;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 10px;
+  margin-right: 5px;
+  transition: 0.5s;
+}
+#page_nav .page-numbers.current,
+#page_nav .page-numbers:hover {
+  background: #262626;
+}
 /*
 Copyright Area Style
 */
