@@ -16,3 +16,6 @@ include_once('inc/theme_function.php');
 
 // menu register
 include_once('inc/menu_register.php');
+
+// Widgets register
+include_once('inc/widgets_register.php');
