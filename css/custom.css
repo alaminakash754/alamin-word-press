@@ -44,8 +44,8 @@ img {
 }
 #header_area {
   padding: 15px 0;
+  box-shadow: 0px 0px 10px #ddd;
 }
-
 #header_area .col-md-9 ul {
   font-family: "Oswald", sans-serif;
   margin: 10px 0 0;
@@ -184,13 +184,11 @@ Menu Position
 #body_area .blog_area {
   width: 100%;
   margin-bottom: 17px;
-  background: rgb(243, 243, 243);
+  background: #fff;
   padding: 15px;
+  box-shadow: 0px 0px 10px #ddd;
 }
-#body_area .blog_are {
-  width: 100%;
-  margin-bottom: 15px;
-}
+
 #body_area .post_thumb {
   overflow: hidden;
   width: 100%;
