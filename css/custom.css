@@ -205,6 +205,9 @@ Menu Position
 #body_area .post_details {
   width: 100%;
 }
+#body_area .post_details div {
+  width: 100% !important;
+}
 #body_area .post_details h2 {
   font-family: "Oswald", sans-serif;
   font-weight: 700;
