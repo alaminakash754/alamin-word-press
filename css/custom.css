@@ -342,3 +342,45 @@ Copyright Area Style
 #copyright_area p a:hover {
   text-decoration: underline;
 }
+
+/*
+Copyright Area Style
+*/
+#comment_area h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+#comment_area label {
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+#comment_area textarea,
+#comment_area input {
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 15px;
+}
+#comment_area textarea {
+  min-height: 150px;
+}
+#comment_area input[type="checkbox"] {
+  width: auto;
+}
+#comment_area input[type="checkbox"] {
+  width: auto;
+}
+#comment_area input[type="submit"] {
+  background: #ea1a70;
+  border: 1px solid #ea1a70;
+  padding: 10px;
+  color: #fff;
+  transition: 0.5s;
+  margin: 0;
+}
+#comment_area input[type="submit"]:hover {
+  background: #262626;
+}
