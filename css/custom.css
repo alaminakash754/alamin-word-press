@@ -246,6 +246,17 @@ Menu Position
   background: #262626;
 }
 /*
+Error page Style
+*/
+.error_page {
+  padding: 20px;
+  text-align: center;
+}
+.error_page p {
+  color: #ea1a70;
+}
+
+/*
 Archive Style
 */
 #archive_title,
