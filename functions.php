@@ -10,6 +10,10 @@ include_once('inc/default.php');
 include_once('inc/enqueue.php');
 
 
+// Adding custom post
+include_once('inc/custom_post.php');
+
+
 // theme function
 include_once('inc/theme_function.php');
 
