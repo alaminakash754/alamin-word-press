@@ -52,5 +52,35 @@ function aw_customizer_register($wp_customize){
         'setting' => 'aw_footer_section',
         'section' => 'aw_footer_option',
     ));
+
+    // Theme color customization
+    
+    $wp_customize -> add_section('aw_colors', array(
+        'title' => __('Theme Color', 'alaminakash'),
+        'description' => 'If need you can change your theme color.',
+    ));
+    $wp_customize-> add_setting ('aw_bg_color', array(
+        'default' => '#ffffff',
+    ));
+    $wp_customize -> add_control( new WP_Customize_Color_Control($wp_customize, 'aw_bg_color', array( 
+        'label' => 'Background Color',
+        'section' => 'aw_colors',
+        'settings' => 'aw_bg_color',
+
+    )));
+
+    $wp_customize-> add_setting ('aw_primary_color', array(
+        'default' => '#ea1a70',
+    ));
+    $wp_customize -> add_control( new WP_Customize_Color_Control($wp_customize, 'aw_primary_color', array( 
+        'label' => 'Primary Color',
+        'section' => 'aw_colors',
+        'settings' => 'aw_primary_color',
+
+    )));
+
+
 }
 add_action( 'customize_register', 'aw_customizer_register');
+
+//  Theme color function
