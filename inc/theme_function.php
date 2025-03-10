@@ -54,7 +54,7 @@ function aw_customizer_register($wp_customize){
     ));
 
     // Theme color customization
-    
+
     $wp_customize -> add_section('aw_colors', array(
         'title' => __('Theme Color', 'alaminakash'),
         'description' => 'If need you can change your theme color.',
@@ -84,3 +84,12 @@ function aw_customizer_register($wp_customize){
 add_action( 'customize_register', 'aw_customizer_register');
 
 //  Theme color function
+function aw_theme_color_customize(){
+    ?>
+    <style>
+        body{background: <?php echo get_theme_mod( 'aw_bg_color' ); ?>}
+        :root{ --pink: <?php echo get_theme_mod( 'aw_primary_color' ); ?>}
+    </style>
+    <?php
+}
+add_action( 'wp_head','aw_theme_color_customize' );
