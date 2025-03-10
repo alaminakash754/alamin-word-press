@@ -88,7 +88,7 @@ function aw_theme_color_customize(){
     ?>
     <style>
         body{background: <?php echo get_theme_mod( 'aw_bg_color' ); ?>}
-        :root{ --pink: <?php echo get_theme_mod( 'aw_primary_color' ); ?>}
+        :root{ --pink: <?php echo get_theme_mod('aw_primary_color'); ?>}
     </style>
     <?php
 }

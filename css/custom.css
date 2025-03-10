@@ -44,7 +44,8 @@ a.readmore:hover {
 }
 
 img {
-  max-width: 80%;
+  max-width: 100%;
+  height: auto;
 }
 #header_area {
   padding: 15px 0;
@@ -414,4 +415,16 @@ Copyright Area Style
 }
 #comment_area input[type="submit"]:hover {
   background: #262626;
+}
+
+/* Theme Service area Style*/
+
+#service_area {
+  padding: 45px 0;
+}
+#service_area .child_service {
+  background: #ddd;
+  box-shadow: 0 0 10px #ddd;
+  border-radius: 15px;
+  padding: 15px;
 }
