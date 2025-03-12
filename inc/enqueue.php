@@ -2,9 +2,12 @@
 function css_js_file_calling(){
     wp_enqueue_style( 'aw-style', get_stylesheet_uri());
     wp_register_style('bootstrap', get_template_directory_uri().'/css/bootstrap.css', array(), '5.3.0', 'all' );
-    wp_enqueue_style('bootstrap');
-
+    wp_register_style('bxslider', get_template_directory_uri().'/css/bxslider.min.css', array(), '4.2.17', 'all' );
+    
     wp_register_style('custom', get_template_directory_uri().'/css/custom.css', array(), '1.0.0', 'all' );
+
+    wp_enqueue_style('bootstrap');
+    wp_enqueue_style('bxslider');
     wp_enqueue_style('custom');
 
     // jquery
