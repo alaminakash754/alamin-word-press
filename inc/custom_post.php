@@ -47,7 +47,7 @@ function custom_slider() {
         'public' => true,
         'publicly_queryable' => true,
         'exclude_from_search' => true,
-        'menu_position' => 6,
+        'menu_position' => 7,
         'has_archive' => true,
         'hierarchial' => true,
         'show_ui' => true,

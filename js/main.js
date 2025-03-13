@@ -1,3 +1,6 @@
-$(document).ready(function () {
-  $(".slider").bxSlider();
+jQuery(document).ready(function () {
+  jQuery(".slider").bxSlider({
+    mode: "fade",
+    captions: true,
+  });
 });

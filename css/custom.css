@@ -424,6 +424,15 @@ Copyright Area Style
   background: #262626;
 }
 
+/* Slider area Style*/
+#slider_area {
+  margin: 20px 0;
+}
+#slider_area img {
+  width: 100%;
+  height: auto;
+}
+
 /* Theme Service area Style*/
 
 #service_area {

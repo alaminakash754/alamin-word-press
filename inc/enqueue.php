@@ -14,8 +14,6 @@ function css_js_file_calling(){
     // wp_enqueue_script( $handle:string, $src:string, $deps:array, $ver:string|boolean|null, $in_footer:boolean )
     wp_enqueue_script( 'jquery' );
 
-    wp_enqueue_script('jquery.min', get_template_directory_uri().'/js/jquery.min.js', array(), '3.1.1', 'true');
-
     wp_enqueue_script('bootstrap', get_template_directory_uri().'/js/bootstrap.js', array(), '5.3.0', 'true');
    
     wp_enqueue_script('bxslider', get_template_directory_uri().'/js/bxslider.min.js', array(), '4.2.17', 'true');
