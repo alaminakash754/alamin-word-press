@@ -26,3 +26,7 @@ include_once('inc/widgets_register.php');
 
 // Shortcode for development
 include_once('inc/shortcode.php');
+
+
+// Login enqueue register
+include_once('inc/login-enqueue.php');
