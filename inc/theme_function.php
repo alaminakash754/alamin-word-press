@@ -78,7 +78,30 @@ function aw_customizer_register($wp_customize){
         'settings' => 'aw_primary_color',
 
     )));
-
+    //theme custom login
+    $wp_customize->add_section('custom_login', array(
+        'title' => __('Custom Login', 'alaminakash'),
+       'description' => 'If you need you can change your custom login info.'
+    ) );
+    $wp_customize->add_setting('custom_login_logo', array(
+        'default' =>get_template_directory_uri( ). '/img/logo.png',
+    ));
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'custom_login_logo', array(
+        'label' => 'Logo Upload',
+        'setting' => 'custom_login_logo',
+        'description' => ' If you interested to change or update your logo you can do it',
+        'section' => 'custom_login'
+    )));
+    // background change function
+    $wp_customize->add_setting('custom_login_bg', array(
+        'default' =>get_template_directory_uri( ). '/img/login.jpg',
+    ));
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'custom_login_bg', array(
+        'label' => 'Background Image Upload',
+        'setting' => 'custom_login_bg',
+        'description' => ' If you interested to change or update your background image you can do it',
+        'section' => 'custom_login'
+    )));
 
 }
 add_action( 'customize_register', 'aw_customizer_register');
@@ -87,9 +110,25 @@ add_action( 'customize_register', 'aw_customizer_register');
 function aw_theme_color_customize(){
     ?>
     <style>
-        body{background: <?php echo get_theme_mod( 'aw_bg_color' ); ?>}
-        :root{ --pink: <?php echo get_theme_mod('aw_primary_color'); ?>}
+        body{background: <?php print get_theme_mod( 'aw_bg_color' ); ?>}
+        :root{ --pink: <?php print get_theme_mod('aw_primary_color'); ?>}
     </style>
     <?php
 }
 add_action( 'wp_head','aw_theme_color_customize' );
+
+
+//  Theme custom login page style
+function custom_color_login(){
+    ?>
+    <style>
+         #login h1 a, .login h1 a{
+                background-image: url(<?php print get_theme_mod("custom_login_logo"); ?>) !important;
+            }
+            body.login {
+  background:url(<?php print get_theme_mod("custom_login_bg"); ?>) !important;
+}
+    </style>
+    <?php
+}
+add_action( 'login_enqueue_scripts','custom_color_login' );
