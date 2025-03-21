@@ -7,6 +7,11 @@ add_image_size( 'service', 400, 350, true );
 add_image_size( 'slider', 1200, 300, true );
 add_image_size( 'post-thumbnails', 970 , 350, true );
 
+
+function my_theme_setup(){
+    add_theme_support( 'post-thumbnails');
+    add_theme_support( 'post-formats', ['aside', 'gallery', 'image', 'audio'] );
+}
 // excerpt to 40 word
 
 function aw_excerpt_more($more){

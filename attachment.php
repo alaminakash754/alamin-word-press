@@ -11,7 +11,8 @@ get_header();
         <div class="row">
             <div class="col-md-12">
                 <?php get_template_part('template_part/post_setup'); ?>
-                
+                <!-- <img src="<?php esc_url($post->guid); ?>" alt="<?php exc_url(get_the_title()); ?>" > -->
+                 <?php var_export($pos); ?>
             </div>
         </div>
     </div>
