@@ -32,12 +32,14 @@ include_once('inc/shortcode.php');
 include_once('inc/login-enqueue.php');
 
 function alaminwordpress_wordCount_heading($heading){
+    
     $heading = "Total Words";
+    // $heading = strtoupper($heading);
     return $heading;
 }
 add_filter( 'wordCount_heading', 'alaminwordpress_wordCount_heading' );
 
 function alaminwordpress_wordCount_tag($tag){
-    return "p";
+    return "i";
 }
 add_filter( 'wordCount_tag', 'alaminwordpress_wordCount_tag' );
