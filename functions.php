@@ -30,3 +30,14 @@ include_once('inc/shortcode.php');
 
 // Login enqueue register
 include_once('inc/login-enqueue.php');
+
+function alaminwordpress_wordCount_heading($heading){
+    $heading = "Total Words";
+    return $heading;
+}
+add_filter( 'wordCount_heading', 'alaminwordpress_wordCount_heading' );
+
+function alaminwordpress_wordCount_tag($tag){
+    return "p";
+}
+add_filter( 'wordCount_tag', 'alaminwordpress_wordCount_tag' );
