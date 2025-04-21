@@ -31,6 +31,7 @@ include_once('inc/shortcode.php');
 // Login enqueue register
 include_once('inc/login-enqueue.php');
 
+
 function alaminwordpress_wordCount_heading($heading){
     
     $heading = "Total Words";
@@ -39,7 +40,20 @@ function alaminwordpress_wordCount_heading($heading){
 }
 add_filter( 'wordCount_heading', 'alaminwordpress_wordCount_heading' );
 
+
+
 function alaminwordpress_wordCount_tag($tag){
-    return "i";
+    return "h1";
 }
 add_filter( 'wordCount_tag', 'alaminwordpress_wordCount_tag' );
+
+
+function alaminwordpress_readingtime_tag($tag){
+    return "i";
+}
+add_filter('wordCount_readingtime_tag', 'alaminwordpress_readingtime_tag' );
+
+function alaminwordpress_articlescount_tag($tag){
+    return "h2";
+}
+add_filter('articlescount_tag', 'alaminwordpress_articlescount_tag' );
