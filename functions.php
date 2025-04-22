@@ -31,7 +31,7 @@ include_once('inc/shortcode.php');
 // Login enqueue register
 include_once('inc/login-enqueue.php');
 
-
+// word count plugin functions 
 function alaminwordpress_wordCount_heading($heading){
     
     $heading = "Total Words";
@@ -57,3 +57,15 @@ function alaminwordpress_articlescount_tag($tag){
     return "h2";
 }
 add_filter('articlescount_tag', 'alaminwordpress_articlescount_tag' );
+
+// qr code plugin functions
+function alaminwordpress_qrcode_post_types($post_types){
+    $post_types[] = 'page';
+    return $post_types;
+}
+add_filter( 'qrcode_excluded_post_type', 'alaminwordpress_qrcode_post_types' );
+
+function alaminwordpress_qrcode_dimension($dimension){
+    return '100*100';
+}
+add_filter( 'qrcode_dimension', 'alaminwordpress_qrcode_dimension');
