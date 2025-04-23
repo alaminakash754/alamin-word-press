@@ -69,3 +69,10 @@ function alaminwordpress_qrcode_dimension($dimension){
     return '100*100';
 }
 add_filter( 'qrcode_dimension', 'alaminwordpress_qrcode_dimension');
+
+//custom pagination mid page number
+
+function alaminwordpress_mid_size_total_number($page){
+    return 5;
+}
+add_filter( 'mid_size_page_number', 'alaminwordpress_mid_size_total_number' );

@@ -35,16 +35,14 @@ function aw_pagenav(){
     $args['base'] = str_replace(99999999, '%#%', get_pagenum_link( 99999999 ));
     $args['total'] = $max;
     $args['current'] = $current;
+    $args['mid_size'] = apply_filters( 'mid_size_page_number', 1 );
     $total = 1 ;
     $args['prev_text'] = '<<';
     $args['next_text'] = '>>';
-    if($max >1) echo '</pre>
-    <div class="aw_pagenav">';
+    if($max >1) echo '</pre> <div class="aw_pagenav">';
     if ($total ==1 && $max > 1) $pages = '<p class="pages"> Page ' . $current . '<span> of </span>' . $max . '</p>';
     echo $pages . paginate_links( $args );
     if ($max > 1) echo '</div><pre>';
-
-
 }
 
 ?>
