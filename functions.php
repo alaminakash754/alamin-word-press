@@ -68,7 +68,7 @@ add_filter( 'qrcode_excluded_post_type', 'alaminwordpress_qrcode_post_types' );
 function alaminwordpress_qrcode_dimension($dimension){
     return '100*100';
 }
-add_filter( 'qrcode_dimension', 'alaminwordpress_qrcode_dimension');
+// add_filter( 'qrcode_dimension', 'alaminwordpress_qrcode_dimension');
 
 //custom pagination mid page number
 
@@ -76,3 +76,11 @@ function alaminwordpress_mid_size_total_number($page){
     return 5;
 }
 add_filter( 'mid_size_page_number', 'alaminwordpress_mid_size_total_number' );
+
+function qrcode_select_checkbox_list($countries){
+    array_push($countries, 'Khulna');
+    $countries = array_diff($countries, array('Khulna'));
+    return $countries;
+}
+
+add_filter( 'qrcode_countries','qrcode_select_checkbox_list');
